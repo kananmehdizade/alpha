@@ -11,6 +11,16 @@
           border-collapse: collapse;
         }
     </style>
+    <style>
+        #content {
+        position: relative;
+    }
+    #content img {
+        position: absolute;
+        top: -400px;
+        right: 1600px;
+    }
+    </style>
 <body>
 
 <h2>Text input fields</h2>
@@ -20,7 +30,16 @@
   <input type="text" id="fname" name="fname" value="John"><br>
   <br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe">
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+
+  <br>
+  <label for="gender">Gender</label>
+  <br>
+  <input type="radio" name ="gender" id="male" value="male"/>
+  <label for="male">Male</label>
+
+  <input type="radio" name="gender" id="female" value="female"/>
+  <label for="female">Female</label>
 </form>
 <br>
 <table>
@@ -38,13 +57,18 @@
     </tr>
 </table>
 <br>
-<iframe src="https://www.google.com/" title="Google website"></iframe>
+<iframe src="https://google.com" title="Google website" aria-errormessage="Site cannot be reachable"></iframe>
 
-<body>
-    <video>
-        <source src=""/>
-    </video>
-</body>
+<div id="content">
+    <img src="./images/google image.png" alt="Google Logo" width="50">
+</div>
+
+<video controls autoplay muted>
+    <source src="https://w3schools.com/tags/movie.mp4">
+    Your browser doesn't support HTML5 video
+</video> 
+
+
 
 <footer>
     <p>Author: Kanan Mehdizade<br>
